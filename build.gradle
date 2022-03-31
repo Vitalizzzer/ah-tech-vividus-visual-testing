@@ -1,5 +1,8 @@
+
 ext.buildSystemPath = "${System.env.VIVIDUS_BUILD_SYSTEM_HOME?:buildSystemRootDir}/${buildSystemVersion}"
 ext.buildSystemDir = file("${buildSystemPath}")
+
+apply from: "${buildSystemPath}/vividus-test-project.gradle"
 
 ext {
     vividusVersion = '0.3.3'

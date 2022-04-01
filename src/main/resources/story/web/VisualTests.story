@@ -6,6 +6,7 @@ Meta:
 When I compare against baseline with `page`
 
 Scenario: Visual test of context element
-Given I am on a page with the URL 'https://github.com/vividus-framework'
-When I change context to element located `By.xpath(//img[@itemprop])`
-When I compare against baseline with `vividus-logo`
+Given I am on a page with the URL 'https://www.aholddelhaize.com'
+When I click on element located `By.id(CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll)`
+When I change context to element located `By.xpath(//img[contains(@src, "//media.aholddelhaize.com/media/smibfv0d/adobestock_103314993.jpg")])`
+When I compare against baseline with `ah-logo`
